@@ -216,6 +216,7 @@ function _listItemsInDatabase(bucketIndex, env) {
       process.exit(1);
     }
 
+    console.log(bucketIndex);
     db.list(bucketIndex, function(err, keys) {
       if (err) {
         process.stderr.write('[error] ' + err.message);
